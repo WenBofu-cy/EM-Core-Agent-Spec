@@ -1,83 +1,19 @@
-# EM-Core-Agent：AI Agent 具身认知核心系统
+# EM-Core Agent V1.1
 
-**EM-Core 通用智能体系 · AI Agent 专项 · 总规范仓库**
+**端侧原生三层解耦认知-记忆-执行通用 AI Agent 架构**
 
-> 版本：V1.0
+> 版本：V1.1 ｜ 日期：2026-06-21
 > 原创提出者：文波福
-> 开源协议：CC BY-NC 4.0（署名-非商业性使用 4.0 国际许可证）
-> 所属体系：EM-Core 通用智能架构
-> 同源体系：[EM-Core-HR](https://github.com/expanding-research/EM-Core-HR-Spec)（人形机器人）｜ [EM-Core-AD](https://github.com/expanding-research/EM-Core-AD-Spec)（自动驾驶）
+> 开源协议：CC BY 4.0
 
+## 子仓库
 
-## 一、仓库定位
+| 仓库 | 模块数 | 说明 |
+|------|:---:|------|
+| [agent-ecc-brain](https://gitee.com/expanding-research/agent-ecc-brain) | 12 | 认知大脑 |
+| [agent-mlnf-mem](https://gitee.com/expanding-research/agent-mlnf-mem) | 60 | 双漏斗记忆中枢 |
+| [agent-mcc-exec](https://gitee.com/expanding-research/agent-mcc-exec) | 40 | 工具执行中枢 |
 
-本仓库为 EM-Core 通用智能系统在 **AI Agent** 方向的总架构规范仓库，承载整体架构设计白皮书、跨模块接口标准及系统部署指南。
+## 文档
 
-EM-Core-Agent 体系由四个独立仓库组成，采用“认知大脑-记忆中枢-行动执行层”三位一体架构，模拟人类智能体的认知闭环：**记忆沉淀经验，大脑负责推理与规划，行动层负责工具调用与执行**。三层解耦，通过标准化总线通信，实现可成长、可定制、安全可控的 AI Agent 原生智能。
-
-
-## 二、四仓库架构全景
-
-```
-EM-Core-Agent-Spec（总规范仓库）
-│
-├── Agent-ecc-brain（认知大脑）
-│   ├── 意图理解模块
-│   ├── 任务规划模块
-│   ├── 工具选择模块
-│   ├── 安全仲裁模块
-│   └── ...
-│
-├── Agent-mlnf-mem（记忆中枢）
-│   ├── 用户画像漏斗
-│   ├── 任务经验漏斗
-│   ├── 五层记忆晋升与遗忘
-│   └── 三维重要度量化引擎
-│
-└── Agent-mcc-exec（行动执行层）
-    ├── 工具注册中心
-    ├── API 调用引擎
-    ├── 代码执行沙箱
-    └── 结果校验与闭环反馈
-```
-
-
-## 三、各仓库索引
-
-| 仓库 | 定位 |
-|------|------|
-| [Agent-ecc-brain](https://github.com/expanding-research/agent-ecc-brain) | 认知大脑：意图理解、任务规划、工具选择、安全仲裁 |
-| [Agent-mlnf-mem](https://github.com/expanding-research/agent-mlnf-mem) | 记忆中枢：用户画像、对话历史、任务经验、知识库 |
-| [Agent-mcc-exec](https://github.com/expanding-research/agent-mcc-exec) | 行动执行层：工具注册、API调用、代码执行、结果校验 |
-| 本仓库 | 总架构规范、接口标准、部署指南 |
-
-
-## 四、与 EM-Core-HR/AD 的同源对照
-
-| 设计维度 | EM-Core-HR（人形机器人） | EM-Core-AD（自动驾驶） | EM-Core-Agent（AI Agent） |
-|----------|--------------------------|--------------------------|----------------------------|
-| 认知大脑 | 12模块 × 112子单元 | 12模块 × 47子单元 | 待定（精简适配） |
-| 记忆中枢 | 60模块，单漏斗 | 51模块，双漏斗 | 复用双漏斗架构 |
-| 执行层 | 54模块，全身协同 | 38模块，车辆控制 | MCC广义化，工具调用 |
-| 核心创新 | 宏观自收敛、人格涌现 | 人机隔离、安全仲裁 | 意图推理、工具编排 |
-| 安全底线 | 三大安全公理 | 固定知识底座 + 降级 | 工具白名单 + 敏感操作确认 |
-
-
-## 五、开源协议与商业授权
-
-### 基础版（本仓库及所有子仓库）
-本软件基础版采用 **CC BY-NC 4.0** 协议开源，仅供个人学习、研究及非商业用途免费使用。**任何商业用途均被严格禁止**。
-
-### 企业版（商业授权）
-如需将本软件用于商业产品、服务或内部商业环境，必须获得 **EM-Core 商业授权**，提供法律合规保障、企业级功能模块及技术支持。  
-联系邮箱：710705008@qq.com
-
-完整说明见 [LICENSE-COMMERCIAL.md](./LICENSE-COMMERCIAL.md)
-
-
-## 六、联系方式
-
-- **原创提出者**：文波福
-- **邮箱**：710705008@qq.com
-- **首发平台**：GitHub、Gitee、知乎、CSDN
-```
+- [技术白皮书 V1.1](EM-Core-Agent/WHITEPAPER.md)
